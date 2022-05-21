@@ -2,7 +2,13 @@
 #include "source/Gauss.h"
 #include <cmath>
 
-
+bool precision(double epsilon, std::vector<double>& prev, std::vector<double>& curr){
+    double sum = 0;
+    for(int i = 0; i < curr.size(); i++){
+        sum += sqrt(pow((prev[i] - curr[i])/curr[i], 2));
+    }
+    return sum <= 0.001;
+}
 
 int main(){
     Matrix a(3, 4);
@@ -14,7 +20,7 @@ int main(){
         curr.push_back(a.data[i][a.get_m()] / a.data[i][i]);
     }
     bool check = false;
-    while (!check){
+    while (!precision(0.01, prev, curr)){
         prev = curr;
         double s1, s2;
         for(int i = 0; i < a.get_m(); i++) {
@@ -28,13 +34,8 @@ int main(){
             curr[i] = (*a.data[i].end() - s1 - s2) / a.data[i][i];
         }
 
-        double sum = 0;
-        for(int i = 0; i < a.get_m(); i++){
-            sum += sqrt(pow(prev[i] - curr[i], 2));
-        }
-        check = sum <= 0.001;
-    }
 
+    }
 
     Gauss(a);
     std::cout << std::endl << a << std::endl;
