@@ -35,10 +35,21 @@ Matrix::Matrix(const Matrix&a) : size_m(a.get_m()), size_n(a.get_n()){ //кон�
         }
     }
 
-
 }
 
 Matrix::~Matrix() {}
+
+void Matrix::DeleteColumn(int n) {
+    for (int i = 0; i < data.size(); i++){
+        data[i].erase(data[i].begin() + n);
+    }
+    this->size_n -= 1;
+}
+
+void Matrix::DeleteLine(int n) {
+    data.erase(data.begin() + n);
+    this->size_m -= 1;
+}
 
 
 Matrix operator+(Matrix &a, Matrix &b)

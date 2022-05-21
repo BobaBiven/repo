@@ -3,4 +3,4 @@ project(casual)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(casual main.cpp source/Matrix.cpp source/Matrix.h source/Gauss.cpp source/Gauss.h)
+add_executable(casual main.cpp source/Matrix.cpp source/Matrix.h source/Gauss.cpp source/Gauss.h source/GaussSeidel.cpp source/GaussSeidel.h source/Determinant.cpp source/Determinant.h)

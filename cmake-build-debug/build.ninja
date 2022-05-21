@@ -67,6 +67,18 @@ build CMakeFiles/casual.dir/source/Gauss.cpp.o: CXX_COMPILER__casual_Debug /home
   OBJECT_DIR = CMakeFiles/casual.dir
   OBJECT_FILE_DIR = CMakeFiles/casual.dir/source
 
+build CMakeFiles/casual.dir/source/GaussSeidel.cpp.o: CXX_COMPILER__casual_Debug /home/askar/CLionProjects/casual/source/GaussSeidel.cpp || cmake_object_order_depends_target_casual
+  DEP_FILE = CMakeFiles/casual.dir/source/GaussSeidel.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/casual.dir
+  OBJECT_FILE_DIR = CMakeFiles/casual.dir/source
+
+build CMakeFiles/casual.dir/source/Determinant.cpp.o: CXX_COMPILER__casual_Debug /home/askar/CLionProjects/casual/source/Determinant.cpp || cmake_object_order_depends_target_casual
+  DEP_FILE = CMakeFiles/casual.dir/source/Determinant.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/casual.dir
+  OBJECT_FILE_DIR = CMakeFiles/casual.dir/source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target casual
@@ -75,7 +87,7 @@ build CMakeFiles/casual.dir/source/Gauss.cpp.o: CXX_COMPILER__casual_Debug /home
 #############################################
 # Link the executable casual
 
-build casual: CXX_EXECUTABLE_LINKER__casual_Debug CMakeFiles/casual.dir/main.cpp.o CMakeFiles/casual.dir/source/Matrix.cpp.o CMakeFiles/casual.dir/source/Gauss.cpp.o
+build casual: CXX_EXECUTABLE_LINKER__casual_Debug CMakeFiles/casual.dir/main.cpp.o CMakeFiles/casual.dir/source/Matrix.cpp.o CMakeFiles/casual.dir/source/Gauss.cpp.o CMakeFiles/casual.dir/source/GaussSeidel.cpp.o CMakeFiles/casual.dir/source/Determinant.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/casual.dir
   POST_BUILD = :

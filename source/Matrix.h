@@ -14,7 +14,6 @@ public:
     //double **data;
     std::vector<std::vector<double>>data;
 
-
     Matrix(int m, int n);
     Matrix(const Matrix&a);
     ~Matrix();
@@ -22,6 +21,10 @@ public:
     int get_m() const { return this->size_m; }
 
     int get_n() const { return this->size_n; }
+
+    void DeleteLine(int n);
+    void DeleteColumn(int n);
+
 
     friend std::istream &operator>>(std::istream &is, Matrix &a);
     friend std::ostream &operator<<(std::ostream &os, Matrix &a);
