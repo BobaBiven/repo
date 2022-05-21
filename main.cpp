@@ -10,6 +10,9 @@ bool precision(double epsilon, std::vector<double>& prev, std::vector<double>& c
     return sum <= 0.001;
 }
 
+
+
+
 int main(){
     Matrix a(3, 4);
     std::cin >> a;
