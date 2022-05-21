@@ -1,0 +1,3 @@
+/home/askar/CLionProjects/casual/cmake-build-debug/CMakeFiles/casual.dir
+/home/askar/CLionProjects/casual/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/askar/CLionProjects/casual/cmake-build-debug/CMakeFiles/rebuild_cache.dir
